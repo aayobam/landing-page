@@ -50,7 +50,7 @@ p{
     margin-top: 10px;
 }
 
-a:hover{
+.site-header a:hover{
     background-color: black;
     color: #EBFBFF;
 }
@@ -116,10 +116,11 @@ a:hover{
     border-radius: 20px;
     padding: 5px 30px;
     margin-top: 10px;
+    color: #EBFBFF;
     background-color: #FF52BF;
 }
 
-a:hover{
+.column1 a:hover{
     background-color: black;
     color: white;
 }
@@ -412,7 +413,7 @@ a:hover{
     color: #ffffff;
 }
 
-a:hover{
+.main5 a:hover{
     color: white;
     background-color: #00252E;
 }
