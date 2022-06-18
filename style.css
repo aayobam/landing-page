@@ -5,19 +5,74 @@
 }
 
 body{
-    margin: 0 auto;
+    margin: auto;
     font-size: 18px;
     background: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400px 700px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 600px;
+    font-family: 'Poppins', sans-serif;
 }
 
 p{
     color: #808D99;
 }
 
+/* site header styling */
+.site-header{
+    margin: auto;
+    display: flex;
+    justify-content:space-between;
+    margin: 10px;
+    align-items: center;
+    width: 80%;
+    position: absolute;
+    z-index: 1000;
+    margin-left: 150px;
+}
 
-a{
-    background-color: #FF52BF;
-    color: #ffffff;
+.site-header img{
+    width: 200px;
+    height: 30px;
+}
+
+.site-header a{
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    position: relative;
+    z-index: 1000;
+    padding: 8px 40px;
+    margin-top: 10px;
+}
+
+a:hover{
+    background-color: black;
+    color: #EBFBFF;
+}
+
+@media only screen and (max-width: 860px){
+    .site-header{
+        margin: auto;
+        width: 100%;
+        justify-content:space-between;
+
+    }
+
+    .site-header img{
+        width: 150px;
+        height: 20px;
+        margin-left: 15px;
+    }
+
+    .site-header a{
+        margin-right: 10px;
+        padding: 8px 17px;
+    }
 }
 
 /* main1 styling */
@@ -25,7 +80,7 @@ a{
     background-image: url("./images/bg-hero-desktop.svg");
     background-color: #EBFBFF;
     width: 100%;
-    min-height: 90vh;
+    min-height: 100vh;
     padding: 2rem;
     margin: auto;
     display: flex;
@@ -44,26 +99,25 @@ a{
 
 
 .column1 h1{
-    min-height: 50%;
     width: 100%;
     margin-bottom: 20px;
+    font-weight: 600px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .column1 p{
-    min-height: 30%;
     width: 100%;
     margin-bottom: 10px;
     margin-bottom: 30px;
 }
 
 .column1 a{
-    min-height: 20%;
-    width: 100%;
     text-decoration: none;
     border-radius: 20px;
     padding: 5px 30px;
+    margin-top: 10px;
+    background-color: #FF52BF;
 }
-
 
 .main1 .column2{
     width: 50%;
@@ -72,15 +126,50 @@ a{
 
 .column2 img{
     width: 100%;
-    padding: 2rem;
 }
 
+@media only screen and (max-width:860px){
+    .main1{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 2em;
+    }
 
+    .main1 .column1{
+        width: 80%;
+        text-align: center;
+    }
+
+    .main1 .column2{
+        margin-top: 40px;
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:530px){
+
+    .main1 .column1{
+        width: 100%;
+        text-align: center;
+    }
+
+    .main1 .column2{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:415px){
+
+    .main1 .column2{
+        height: 80%;
+        margin-bottom: -20px;
+    }
+}
 
 /* main2 styling*/
 
 .main2{
-    background-color: white;
     margin: auto;
     padding: 2em;
     display: flex;
@@ -124,6 +213,39 @@ a{
     width: 100%;
 }
 
+@media only screen and (max-width: 860px){
+    .main2{
+        display: flex;
+        width: 90%;
+        flex-direction: column-reverse;
+        padding: 2em;
+    }
+
+    .main2 .column1{
+        min-height: 50%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .main2 .column2{
+        min-height: 50%;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+
+    .column1{
+        min-height: 50%;
+        width: 80%;
+    }
+
+    .main2 .column2{
+        min-height: 50%;
+        width: 120%;
+    }
+}
+
 
 /* main3 styling */
 .main3{
@@ -143,11 +265,10 @@ a{
 
 .main3 .column1{
     width: 50%;
-    min-height: 70%;
-    overflow: hidden;
 }
 
 .column1 img{
+    height: 50vh;
     width: 100%;
 }
 
@@ -165,6 +286,26 @@ a{
 .column2 p{
     min-height: 50%;
     width: 100%;
+}
+
+@media only screen and (max-width: 860px){
+    .main3{
+        display: flex;
+        width: 90%;
+        flex-direction: column;
+        padding: 2em;
+    }
+
+    .main3 .column1{
+        height: 30%;
+        width: 100%;
+    }
+
+    .main3 .column2{
+        min-height: 70%;
+        width: 100%;
+        text-align: center;
+    }
 }
 
 /* main4 styling*/
@@ -211,6 +352,27 @@ a{
     width:100%;
 }
 
+@media only screen and (max-width: 860px){
+    .main4{
+        display: flex;
+        width: 90%;
+        flex-direction: column-reverse;
+        padding: 2em;
+    }
+
+    .main4 .column1{
+        height: 50%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .main4 .column2{
+        height: 5%;
+        width: 100%;
+    }
+}
+
+
 /* main5 styling */
 .main5{
     margin: auto;
@@ -219,34 +381,254 @@ a{
     align-items: center;
     justify-content: center;
     text-align: center;
-    border-radius: 20px;
     width: 45%;
     min-height: 40vh;
     padding: 2rem;
+    border-radius: 20px;
     margin-top: 5em;
     box-shadow: 0px 3px 20px #d1d8da;
+    position: relative;
+    margin-bottom: -5em;
+    z-index: 1000;
 }
+
+.main5 h3{
+    width: 100%;
+}
+
 
 .main5 a{
     text-decoration: none;
     border-radius: 40px;
-    padding: 20px 70px;
-    margin-top: 30px;
+    padding: 15px 110px;
+    margin-top: 10px;
+    background-color: #FF52BF;
+    color: #ffffff;
+}
+
+@media only screen and (max-width: 1004px){
+
+    .main5 a{
+        padding: 12px 80px;
+    }
+}
+
+@media only screen and (max-width: 860px){
+    .main5{
+        display: flex;
+        width: 90%;
+        flex-direction: column;
+        padding: 2em;
+    }
+
+    .main5 h1{
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 564px){
+    .main5{
+        display: flex;
+        width: 90%;
+        flex-direction: column;
+        padding: 2em;
+    }
+}
+
+@media only screen and (max-width: 564px){
+    .main5 a{
+        padding: 15px 70px;
+    }
+
+    .main h1{
+        padding: 0px 20px;
+    }
+}
+
+@media only screen and (max-width: 440px){
+    .main5{
+        display: flex;
+        width: 90%;
+        flex-direction: column;
+        padding: 2em;
+    }
+
+    .main5 a{
+        padding: 15px 55px;
+    }
+}
+
+@media only screen and (max-width: 396px){
+
+    .main5 a{
+        padding: 12px 40px;
+    }
 }
 
 
 /* main6 styling */
 .main6{
-    gap: 30px;
     margin: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 100%;
+    min-height: 90vh;
     padding: 2rem;
-    min-height: 70vh;
+    gap: 50px;
     background-color: #00252E;
     color: white;
-    margin-top: 2em;
+}
+
+.main6 p{
+    color: #ffffff;
+}
+
+.main6 a{
+    color: #ffffff;
+}
+
+.fab{
+    font-size: 30px;
+}
+
+.main6 .column1{
+   height: 50%;
+   width: 50%;
+}
+
+.column1 img{
+    width: 20px;
+    height: 20px;
+    color: #EBFBFF;
+}
+
+.column1 #huddle{
+    width: 150px;
+    height: 20px;
+    margin-right: -120px;
+}
+
+.main6 .column2{
+    display: flex;
+    flex-direction: column; 
+    height: 50%;
+    width: 25%;
+}
+
+.column2 a{
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.main6 .column3{
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: 25%;
+}
+
+.column3 a{
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.main6 .column4{
+    display: flex;
+    gap: 5px;
+    height: 50%;
+    width: 25%;
+}
+
+.column4 a{
+    text-decoration: none;
+    margin-left: 3px;
+}
+
+.column4 .fa-facebook{
+    color: white;
+}
+
+.column .copyright{
+    top: 100;
+}
+
+@media only screen and (max-width:771px){
+    .main6{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .main6 .column1{
+        margin-top: 100px;
+        width: 80%;
+    }
+
+    .main6 .column2{
+        margin-top: -15px;
+        width: 80%;
+    }
+
+    .main6 .column3{
+        width: 80%;
+        margin-top: -50px;
+    }
+
+    .main6 .column4{
+        width: 80%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .column4 .fab{
+        padding: 1rem;
+    }
+}
+
+/* site footer styling*/
+
+.copyright{
+    text-align: center;
+    margin: auto;
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    width: 80%;
+    position: absolute;
+    z-index: 1000;
+    margin-left: 150px;
+    margin-top: -100px;
+    color: #ffffff;
+}
+
+@media only screen and (max-width:771px){
+    .copyright{
+        display: flex;
+        width: 55%;
+        justify-content:center;
+    }
+
+    .copyright small{
+        margin-top: 65px;
+    }
+}
+
+@media only screen and (max-width:580px){
+    .copyright small{
+        margin-left: -40px;
+    }
+}
+
+@media only screen and (max-width:470px){
+    .copyright small{
+        margin-left: -80px;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .copyright small{
+        margin-left: -120px;
+    }
 }
